@@ -25,6 +25,7 @@ export default function Topics(props) {
         ) : (
           <h3>No related topics</h3>
         )}
+        {isFetching && <h2 className="loading">Loading...</h2>}
       </>
     );
   } else if (isFetching) {
@@ -34,6 +35,7 @@ export default function Topics(props) {
         <Topic name={searchTerm} stargezers="Loading..." />
         <h2>Related Topics:</h2>
         Loading...
+        {isFetching && <h2 className="loading">Loading...</h2>}
       </>
     );
   } else if (isError) {

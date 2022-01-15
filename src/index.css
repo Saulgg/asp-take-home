@@ -3,6 +3,13 @@
   text-align: center;
 }
 
+.loading {
+  position: fixed;
+  bottom: 90%;
+  right: 5%;
+  margin: 30px;
+}
+
 .clickable {
   color: rgb(3, 83, 148);
 }
