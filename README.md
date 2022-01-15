@@ -3,6 +3,9 @@
 ## Dev Notes
 
 This project uses the following libraries and tools:
+### Create React App
+* To bootstrap a React App.
+
 ### React Query:
 * Provides a standard way of getting values from a server
 * Works with graphql
