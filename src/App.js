@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { QueryClient, QueryClientProvider } from "react-query";
+import Topics from "./Topics";
+import Search from "./Search";
 
-function App() {
+const queryClient = new QueryClient();
+
+export default function App() {
+  const [searchTerm, setSearchTerm] = useState("react");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" data-testid="App">
+      <h1>GitHub Topic Explorer</h1>
+      <QueryClientProvider client={queryClient}>
+        <Search setSearchTerm={setSearchTerm} />
+        <Topics searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      </QueryClientProvider>
     </div>
   );
 }
-
-export default App;
