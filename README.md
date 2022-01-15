@@ -58,6 +58,7 @@ Your app is ready to be deployed!
 * Refactoring:
   * Make the Topics component more independent, so it can be used without props, probably using Context so we stop the searchTerm prop drill.
   * Implement a standard for writing CSS, like BEM.
+  * Hide API secrets in a secure manner.
 * Additional Features:
   * Add Tests for Accessibility.
   * Add PropTypes.
