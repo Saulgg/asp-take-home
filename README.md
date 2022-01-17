@@ -28,6 +28,8 @@ To install the project you must run the following script:
 
 ### `npm install`
 
+Remove the word `example` from the `.env.example` file and set your github private access token in the `REACT_APP_ACCESS_TOKEN` variable
+
 ## Available Scripts
 
 In the project directory, you can run:
