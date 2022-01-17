@@ -4,23 +4,23 @@
 
 This project uses the following libraries and tools:
 ### Create React App
-* To bootstrap a React App.
+* Used to quickly bootstrap a react app.
 
 ### React Query:
-* Provides a standard way of getting values from a server
-* Works with graphql
-* Reduces boilerplate since it has fetching statuses integrated that work out of the box
-* Easy to test
+* Provides a standard way of getting values from a server.
+* Works with graphql.
+* Reduces boilerplate since it has fetching statuses integrated that work out of the box.
+* Easy to test.
 * Caches values so improves user experience, for example, when loading a topic that was previously loaded.
 
 ### GraphQL
-* Used to create the query
+* Used to create the GraphQL query.
 
 ### GraphQL-request
-* Minimal GraphQL client
+* Minimal GraphQL client, used to make the GraphQL request.
 
 ### React Testing Library and Jest
-* Used for writing tests without implementation details.
+* Used for writing tests.
 
 ## Installation
 
