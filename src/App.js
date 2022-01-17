@@ -11,7 +11,7 @@ export default function App() {
     <div className="App" data-testid="App">
       <h1>GitHub Topic Explorer</h1>
       <QueryClientProvider client={queryClient}>
-        <Search setSearchTerm={setSearchTerm} />
+        <Search setSearchTerm={setSearchTerm} placeholder="Topic" />
         <Topics searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </QueryClientProvider>
     </div>

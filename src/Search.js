@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Search(props) {
-  const { setSearchTerm } = props;
+  const { setSearchTerm, placeholder } = props;
   const [search, setSearch] = useState("");
 
   /**
@@ -20,6 +20,7 @@ export default function Search(props) {
         type="text"
         value={search}
         name="search"
+        placeholder={placeholder || ""}
         onChange={(event) => {
           setSearch(event.target.value);
         }}
