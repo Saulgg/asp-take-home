@@ -22,6 +22,9 @@ This project uses the following libraries and tools:
 ### React Testing Library and Jest
 * Used for writing tests.
 
+### Mock Service Worker (msw)
+* Used for testing components that depend on fetched data by mocking the server request.
+
 ## Installation
 
 To install the project you must run the following script:
